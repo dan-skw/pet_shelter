@@ -21,7 +21,7 @@ export const HelpSection = () => {
               <div
                 key={id}
                 className="flex flex-col items-center mx-6 my-4 p-2
-              rounded-xl hover:bg-slate-50 hover:shadow-md hover:transition-all hover:duration-200 hover:cursor-pointer"
+              rounded-xl hover:bg-gray-50 hover:shadow-md hover:transition-all hover:duration-200 hover:cursor-pointer"
               >
                 <button>
                   <Icon className="h-14 w-14 m-4" />
