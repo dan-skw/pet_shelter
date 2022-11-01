@@ -1,19 +1,21 @@
 import * as React from "react";
-import { useAxios } from "../hooks/useAxios";
+import { useAxios } from "../../hooks/useAxios";
+import {
+  BsFillArrowRightCircleFill,
+  BsFillArrowLeftCircleFill,
+} from "react-icons/bs";
 
 type PetsProps = {
   petsList: {
     id: number;
     name: string;
-    race: string; 
+    race: string;
   }[];
 };
 
-export const SinglePet = (petsList: PetsProps) => {
+export const SinglePet = (pets: PetsProps) => {
   const [petsNum, setPetsNum] = React.useState<number>(0);
-    const {
-        loading, isError, error, petsLoaded, hasNextPage} = useAxios(petsNum);
-    }
+  const { loading, isError, error, petsLoaded, hasNextPet } = useAxios(petsNum);
 
   const innerBoxRef = React.useRef<HTMLDivElement>(null);
 
@@ -99,9 +101,9 @@ export const SinglePet = (petsList: PetsProps) => {
 
   return (
     <>
-      <div className="flex max-w-xl">
+      <div className="flex justify-center items-center max-w-3xl min-w-xl w-full relative">
         <div
-          className="flex flex-nowrap overflow-auto scroll-m-0"
+          className="flex flex-nowrap w-3/4 overflow-auto scroll-m-0"
           ref={innerBoxRef}
           onScroll={handleScrollChangeEvent}
         >
@@ -111,18 +113,18 @@ export const SinglePet = (petsList: PetsProps) => {
           <React.Fragment>
             {leftArrowVisible && (
               <div
-                className="text-white"
+                className="absolute left-0"
                 onClick={handleLeftArrowIconClickEvent}
               >
-                x
+                <BsFillArrowLeftCircleFill size={32} />
               </div>
             )}
             {rightArrowVisible && (
               <div
-                className="text-white"
+                className="absolute right-0"
                 onClick={handleRightArrowIconClickEvent}
               >
-                v
+                <BsFillArrowRightCircleFill size={32} />
               </div>
             )}
           </React.Fragment>

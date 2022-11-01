@@ -51,7 +51,7 @@ export const PetsShowcase = () => {
         Our <span className="text-orange-200">friends</span> who are looking for
         a house
       </h1>
-      <div className="flex w-2/3 justify-center">
+      <div className="flex w-3/4 justify-center">
         <SinglePet petsList={petsArray} />
       </div>
       <button className="bg-orange-200 text-black p-4 rounded-full mt-8 hover:cursor-pointer ">
