@@ -1,0 +1,44 @@
+{
+  "pets": [
+    {
+      "id": 1,
+      "name": "spider",
+      "race": "Owczarekniemiecki"
+    },
+    {
+      "id": 2,
+      "name": "polo",
+      "race": "Owczarekniemiecki"
+    },
+    {
+      "id": 3,
+      "name": "rider",
+      "race": "Kundelek"
+    },
+    {
+      "id": 4,
+      "name": "ridersd",
+      "race": "Kundelek"
+    },
+    {
+      "id": 5,
+      "name": "ridersd",
+      "race": "Kundelek"
+    },
+    {
+      "id": 6,
+      "name": "ridersd",
+      "race": "Kundelek"
+    },
+    {
+      "id": 7,
+      "name": "ridersd",
+      "race": "Kundelek"
+    },
+    {
+      "id": 8,
+      "name": "ridersd",
+      "race": "Kundelek"
+    }
+  ]
+}
