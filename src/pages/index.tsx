@@ -6,6 +6,7 @@ import { Welcome } from "../components/Welcome";
 import { About } from "../components/About";
 import { PetsShowcase } from "../components/PetsShowcase/PetsShowcase";
 import { HelpSection } from "../components/FormsOfHelp/HelpSection";
+import { Donation } from "../components/Donation";
 
 const IndexPage = () => {
   return (
@@ -15,6 +16,7 @@ const IndexPage = () => {
       <About />
       <PetsShowcase />
       <HelpSection />
+      <Donation />
     </>
   );
 };
