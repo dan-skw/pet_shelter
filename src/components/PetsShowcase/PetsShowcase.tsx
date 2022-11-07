@@ -1,5 +1,5 @@
 import React from "react";
-import { SinglePet } from "./SinglePet";
+import { PetsGallery } from "./PetsGallery";
 
 export const PetsShowcase = () => {
   const petsArray = [
@@ -52,7 +52,7 @@ export const PetsShowcase = () => {
         a house
       </h1>
       <div className="flex w-3/4 justify-center">
-        <SinglePet petsList={petsArray} />
+        <PetsGallery petsList={petsArray} />
       </div>
       <button className="bg-orange-200 text-black p-4 rounded-full mt-8 hover:cursor-pointer ">
         Get to know the rest

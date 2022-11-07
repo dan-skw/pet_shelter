@@ -7,3 +7,17 @@
 body {
   background-color: black;
 }
+
+.doggo {
+  background: url();
+}
+
+@layer components {
+  .nav-btn {
+    @apply mx-4 transition duration-300 border-b-2 rounded-sm border-transparent hover:border-slate-200 hover:cursor-pointer hover:text-slate-400;
+  }
+
+  .first-doggo {
+    @apply bg-[url('../images/doggi.jpg')] bg-cover;
+  }
+}

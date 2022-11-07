@@ -1,5 +1,4 @@
 import * as React from "react";
-import { useAxios } from "../../hooks/useAxios";
 import {
   BsFillArrowRightCircleFill,
   BsFillArrowLeftCircleFill,
@@ -13,10 +12,7 @@ type PetsProps = {
   }[];
 };
 
-export const SinglePet = (pets: PetsProps) => {
-  const [petsNum, setPetsNum] = React.useState<number>(0);
-  const { loading, isError, error, petsLoaded, hasNextPet } = useAxios(petsNum);
-
+export const PetsGallery = (pets: PetsProps) => {
   const innerBoxRef = React.useRef<HTMLDivElement>(null);
 
   const handleLeftArrowIconClickEvent: React.EventHandler<
@@ -86,7 +82,7 @@ export const SinglePet = (pets: PetsProps) => {
       return (
         <article
           key={id}
-          className=" flex flex-col justify-between items-center bg-white text-black rounded-3xl w-3/4 py-8 m-2"
+          className="scroll-mx-6 snap-center flex shrink-0 w-full md:w-48 flex-col justify-between items-center bg-white text-black rounded-3xl py-8 m-2"
         >
           <p>piesek</p>
           <p className="font-merri text-3xl mt-10">{name}</p>
@@ -101,9 +97,9 @@ export const SinglePet = (pets: PetsProps) => {
 
   return (
     <>
-      <div className="flex justify-center items-center max-w-3xl min-w-xl w-full relative">
+      <div className="flex justify-center items-center max-w-4xl min-w-xl w-full relative">
         <div
-          className="flex flex-nowrap w-3/4 overflow-auto scroll-m-0"
+          className="snap-x snap-mandatory flex flex-nowrap w-3/4 overflow-auto md:overflow-hidden px-2"
           ref={innerBoxRef}
           onScroll={handleScrollChangeEvent}
         >
@@ -112,20 +108,20 @@ export const SinglePet = (pets: PetsProps) => {
         {arrowsVisible && (
           <React.Fragment>
             {leftArrowVisible && (
-              <div
+              <button
                 className="absolute left-0"
                 onClick={handleLeftArrowIconClickEvent}
               >
                 <BsFillArrowLeftCircleFill size={32} />
-              </div>
+              </button>
             )}
             {rightArrowVisible && (
-              <div
+              <button
                 className="absolute right-0"
                 onClick={handleRightArrowIconClickEvent}
               >
                 <BsFillArrowRightCircleFill size={32} />
-              </div>
+              </button>
             )}
           </React.Fragment>
         )}
