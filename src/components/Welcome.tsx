@@ -1,6 +1,7 @@
 import React from "react";
 import { Header } from "./Header";
-import { StaticImage } from "gatsby-plugin-image";
+
+import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 
 export const Welcome = () => {
   return (
@@ -28,6 +29,14 @@ export const Welcome = () => {
             </button>
             <div className="bg-slate-500 rounded-full md:w-64 md:h-16"></div>
           </div>
+        </div>
+        <div className="fixed flex flex-col md:flex-row text-white text-2xl right-0 bottom-0 p-4 space-y-2 md:space-x-2 md:space-y-0">
+          <a href="https://www.linkedin.com/in/daniel-skwarczek-23451b237/">
+            <FaLinkedin className="transition duration-400 hover:fill-blue-400" />
+          </a>
+          <a href="https://github.com/dan-skw/pet_shelter">
+            <FaGithubSquare className="transition duration-400 hover:fill-pink-800" />
+          </a>
         </div>
       </section>
     </>

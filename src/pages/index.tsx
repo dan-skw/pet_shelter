@@ -17,7 +17,6 @@ const IndexPage = () => {
       <HelpSection />
       <Donation />
       <Footer />
-      <div className="fixed text-white text-2xl">ssdfsdfsdf</div>
     </>
   );
 };

@@ -1,9 +1,10 @@
 import React from "react";
+import { PetsShowcase } from "./PetsShowcase/PetsShowcase";
 
 export const About = () => {
   return (
-    <section className="w-full h-full flex flex-col md:flex-row text-white justify-center items-center">
-      <div className="md:w-1/4">pieski</div>
+    <section className="w-full h-screen flex flex-col md:flex-row text-white justify-center items-center">
+      <div className="second-doggo md:w-1/4 h-full">pieski</div>
       <div className="w-4/5 md:w-1/4">
         <h1 className="font-merri text-2xl md:text-3xl text-center md:text-left mb-4 md:mb-8">
           About the Shelter <br></br>

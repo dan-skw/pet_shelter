@@ -20,4 +20,8 @@ body {
   .first-doggo {
     @apply bg-[url('../images/doggi.jpg')] bg-cover;
   }
+
+  .second-doggo {
+    @apply bg-[url('../images/holdinghands.jpg')] bg-cover;
+  }
 }
