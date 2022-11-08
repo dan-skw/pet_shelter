@@ -22,6 +22,10 @@ body {
   }
 
   .second-doggo {
-    @apply bg-[url('../images/holdinghands.jpg')] bg-cover;
+    @apply bg-[url('../images/holdinghands2.jpg')] bg-cover;
+  }
+
+  .help-doggo {
+    @apply bg-[url('../images/doggiup.jpg')] bg-cover;
   }
 }
