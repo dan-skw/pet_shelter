@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-export const useCheckSize = () => {
+export const useSizeCheck = () => {
   const [width, setWidth] = useState<number>(window.innerWidth);
   const handleWindowSizeChange = () => {
     setWidth(window.innerWidth);

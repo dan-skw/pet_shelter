@@ -18,7 +18,7 @@ body {
   }
 
   .first-doggo {
-    @apply bg-[url('../images/doggi.jpg')] bg-cover;
+    @apply bg-[url('../images/wrr.jpg')] bg-cover;
   }
 
   .second-doggo {

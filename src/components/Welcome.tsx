@@ -6,10 +6,10 @@ import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 export const Welcome = () => {
   return (
     <>
-      <section className="first-doggo w-full h-screen flex flex-col sm:justify-start items-center py-20">
+      <section className="first-doggo w-full h-screen flex flex-col sm:justify-start items-center md:py-20 pb-10">
         <Header />
-        <div className="flex flex-col h-full w-3/4">
-          <div className="w-full md:w-2/3 h-full md:h-3/4 flex flex-col justify-end pb-16">
+        <div className="flex flex-col h-full md:w-3/4">
+          <div className="w-full md:w-2/3 h-3/4 md:h-3/4 flex flex-col justify-center items-center text-justify md:justify-end md:pb-16">
             <div className="w-3/4">
               <h1 className="font-merri text-white text-2xl md:text-4xl">
                 Everyone needs a
@@ -23,11 +23,10 @@ export const Welcome = () => {
               </p>
             </div>
           </div>
-          <div className="flex w-1/3 justify-center">
-            <button className="absolute bg-white rounded-full md:w-64 md:h-16 md:text-2xl hover:cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 duration-300">
+          <div className="flex md:w-1/3 justify-center">
+            <button className="bg-white w-1/2 h-14 rounded-full md:w-64 md:h-16 md:text-2xl hover:cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 duration-300">
               Make a friend
             </button>
-            <div className="bg-slate-500 rounded-full md:w-64 md:h-16"></div>
           </div>
         </div>
         <div className="fixed flex flex-col md:flex-row text-white text-2xl right-0 bottom-0 p-4 space-y-2 md:space-x-2 md:space-y-0">

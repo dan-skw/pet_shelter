@@ -1,9 +1,19 @@
 import React from "react";
+import { StaticImage } from "gatsby-plugin-image";
+
+import { useSizeCheck } from "../hooks/useSizeCheck";
 
 export const About = () => {
+  const screenSize = useSizeCheck();
   return (
     <section className="w-full h-screen flex flex-col md:flex-row text-white justify-center items-center">
-      <div className="second-doggo md:w-1/4 h-full"></div>
+      {!screenSize && (
+        <StaticImage
+          src={"../images/holdinghands2.jpg"}
+          alt={"witam"}
+          className="md:w-1/4"
+        />
+      )}
       <div className="ml-4 w-4/5 md:w-1/4">
         <h1 className="font-merri text-2xl md:text-3xl text-center md:text-left mb-4 md:mb-8">
           About the Shelter <br></br>

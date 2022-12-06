@@ -1,11 +1,16 @@
 import React from "react";
 import CreditCard from "../../assets/credit-card.inline.svg";
+import { StaticImage } from "gatsby-plugin-image";
 
 export const Donation = () => {
   return (
     <section className="bg-white h-full w-full flex flex-col md:flex-row md:justify-center border-solid divide-y-2 border-black">
       <div className="flex flex-col items-center text-center md:text-left md:flex-row md:justify-center w-full md:w-2/3">
-        <div className="help-doggo w-2/4 h-full"></div>
+        {/* <StaticImage
+          src={"../../images/doggiup.jpg"}
+          alt="dog looking up"
+          className="invisible md:visible w-1/2 h-1/2 object-cover"
+        /> */}
         <div className="flex flex-col items-center md:items-start px-6 md:px-0 md:w-1/4 m-4">
           <h1 className="font-playfair text-3xl">
             In addition, you can make a donation

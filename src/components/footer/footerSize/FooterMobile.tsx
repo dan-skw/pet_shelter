@@ -3,7 +3,7 @@ import React from "react";
 export const FooterMobile = () => {
   return (
     <>
-      <section className="flex flex-col items-center bg-white">
+      <section className="flex flex-col items-center bg-black">
         <div>
           <h2>For questions and suggestions</h2>
           <div>

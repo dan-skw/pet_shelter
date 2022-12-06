@@ -11,57 +11,51 @@ import Syringe from "../assets/syringe.inline.svg";
 const buttons = [
   {
     id: 1,
-    IconName: "Transport",
+    iconName: "Transport",
     Icon: Ambulance,
     alt: "Transportation",
   },
   {
     id: 2,
-    IconName: "Ball",
+    iconName: "Ball",
     Icon: Ball,
     alt: "Toys",
   },
   {
     id: 3,
-    IconName: "Bowl",
+    iconName: "Bowl",
     Icon: Bowl,
     alt: "Bowls and cups",
   },
   {
     id: 4,
-    IconName: "Cat Food",
+    iconName: "Cat Food",
     Icon: CatFood,
     alt: "Pet food",
   },
   {
     id: 5,
-    IconName: "Cat",
+    iconName: "Cat",
     Icon: Cat,
     alt: "Sleeping area",
   },
   {
     id: 6,
-    IconName: "Leash",
+    iconName: "Leash",
     Icon: Leash,
     alt: "Collars / leashes",
   },
   {
     id: 7,
-    IconName: "Pills",
+    iconName: "Pills",
     Icon: Pills,
     alt: "Vitamins",
   },
   {
     id: 8,
-    IconName: "Shampoo",
+    iconName: "Shampoo",
     Icon: Shampoo,
     alt: "Shampoos",
-  },
-  {
-    id: 9,
-    IconName: "Syringe",
-    Icon: Syringe,
-    alt: "Medicines",
   },
 ];
 
