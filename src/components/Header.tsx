@@ -1,35 +1,12 @@
-import React, { useEffect, useRef, useState, useMemo } from "react";
+import React, { useRef } from "react";
 import { createPortal } from "react-dom";
+import { useIsVisible } from "../hooks/useIsVisible";
 
 import MobileNav from "./MobileNav";
 
 export const Header = () => {
-  const navRef = useRef(null);
-
-  const useIsVisible = (ref) => {
-    const [isVisible, setIsVisible] = useState(false);
-
-    const observer = useMemo(
-      () =>
-        new IntersectionObserver(([entry]) =>
-          setIsVisible(entry.isIntersecting)
-        ),
-      []
-    );
-
-    useEffect(() => {
-      observer.observe(ref.current);
-
-      return () => {
-        observer.disconnect();
-      };
-    }, [ref, observer]);
-
-    return isVisible;
-  };
-
+  const navRef = useRef<HTMLElement>(null);
   const isInViewport = useIsVisible(navRef);
-  console.log(isInViewport);
 
   return (
     <>

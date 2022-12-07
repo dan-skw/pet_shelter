@@ -17,8 +17,12 @@ body {
     @apply mx-4 transition duration-300 border-b-2 rounded-sm border-transparent hover:border-slate-200 hover:cursor-pointer hover:text-slate-400;
   }
 
+  .mobile-nav-btn {
+    @apply flex items-center justify-center text-white bg-slate-600 rounded-full m-2 transition duration-300 hover:bg-slate-500 hover:cursor-pointer hover:text-white;
+  }
+
   .first-doggo {
-    @apply bg-[url('../images/wrr.jpg')] bg-cover;
+    @apply bg-[url('../images/doggi.jpg')] bg-cover;
   }
 
   .second-doggo {

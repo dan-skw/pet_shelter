@@ -10,6 +10,14 @@ module.exports = {
         playfair: ['"Playfair Display"', "serif"],
         merri: ['"Merriweather"', "serif"],
       },
+      animation: {
+        appear: "appear 1s ease-in",
+      },
+      keyframes: {
+        appear: {
+          "100%": { bottom: "0px" },
+        },
+      },
     },
   },
   plugins: ["gatsby-plugin-postcss"],

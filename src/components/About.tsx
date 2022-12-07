@@ -7,15 +7,13 @@ export const About = () => {
   const screenSize = useSizeCheck();
   return (
     <section className="w-full h-screen flex flex-col md:flex-row text-white justify-center items-center">
-      {!screenSize && (
-        <StaticImage
-          src={"../images/holdinghands2.jpg"}
-          alt={"witam"}
-          className="md:w-1/4"
-        />
-      )}
+      <StaticImage
+        src={"../images/holdinghands2.jpg"}
+        alt={"witam"}
+        className="hidden sm:block sm:w-1/2"
+      />
       <div className="ml-4 w-4/5 md:w-1/4">
-        <h1 className="font-merri text-2xl md:text-3xl text-center md:text-left mb-4 md:mb-8">
+        <h1 className="font-merri text-xl sm:text-3xl text-center md:text-left mb-4 md:mb-8">
           About the Shelter <br></br>
           <span className="font-playfair text-slate-400 text-3xl md:text-6xl">
             Lovely Paws
